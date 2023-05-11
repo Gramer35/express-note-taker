@@ -9,9 +9,11 @@ const app = express();
 
 const PORT = 3001;
 
+app.use(express.static('public'));
+
 
 
 
 app.listen(PORT, () =>
-    console.log(`App listnening at http"//localhost:${PORT}`)
+    console.log(`App listnening at http://localhost:${PORT}`)
 );
